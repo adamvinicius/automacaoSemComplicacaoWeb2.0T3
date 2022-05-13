@@ -2,7 +2,12 @@ package br.com.chronosAcademy.pages;
 
 import br.com.chronosAcademy.core.Driver;
 import br.com.chronosAcademy.maps.LoginMap;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginPage {
     LoginMap loginMap;
@@ -47,4 +52,5 @@ public class LoginPage {
     public boolean isBtnSignIn(){
         return loginMap.btnSignIn.isEnabled();
     }
+
 }
