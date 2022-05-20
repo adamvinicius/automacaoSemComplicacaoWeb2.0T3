@@ -1,6 +1,7 @@
 package br.com.chronosAcademy.steps;
 
 import br.com.chronosAcademy.core.Driver;
+import br.com.chronosAcademy.enums.Browser;
 import br.com.chronosAcademy.pages.LoginPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -16,7 +17,7 @@ public class LoginSteps {
 
     @Before
     public void iniciaNavegador(){
-       new Driver("chrome");
+       new Driver(Browser.CHROME);
     }
 
     @After
