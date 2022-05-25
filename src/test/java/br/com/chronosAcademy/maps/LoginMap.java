@@ -20,4 +20,6 @@ public class LoginMap {
     public WebElement inpRemember;
     @FindBy(linkText = "CREATE NEW ACCOUNT")
     public WebElement linkCreateAccount;
+    @FindBy(css = ".loader")
+    public WebElement divLoader;
 }

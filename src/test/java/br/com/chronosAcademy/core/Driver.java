@@ -49,6 +49,10 @@ public class Driver {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
+    public static void atributeChange(WebElement element, String atribute, String value){
+        wait.until(ExpectedConditions.attributeContains(element, atribute, value));
+    }
+
     public static WebDriver getDriver(){
         return driver;
     }
