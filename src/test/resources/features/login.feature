@@ -29,7 +29,7 @@ Funcionalidade: Login
 
     Exemplos:
       | identificacao       | login   | password | remember |
-      | todos os campos     | chronos | Senha123 | true     |
+      | todos os campos     | erro    | Senha123 | true     |
       | campos obrigatorios | chronos | Senha123 | false    |
   @LoginInvalido
   Esquema do Cenario: Realizar login com <identificacao>
