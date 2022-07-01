@@ -1,4 +1,5 @@
 #language:pt
+@CRUD
 Funcionalidade: Account CRUD
 
   @cadastroConta
@@ -27,5 +28,21 @@ Funcionalidade: Account CRUD
         | login    | chronosTeste |
         | password | Senha123     |
         | remember | false        |
+      Dado que esteja na pagina de alteracao de conta
+      Quando altero os valores dos seguintes campos
+        | firstName | Chronos |
+        | lastName  | Teste   |
+      Quando for realizado o clique em salvar
+      Entao a alteracao foi exibida na pagina myAccount
+
+    @exclusaoCRUD
+    Cenario: Deletar usuario
+      Dado que esteja logado no sistema com
+        | login    | chronosTeste |
+        | password | Senha123     |
+        | remember | false        |
+      Dado que esteja na pagina myAccount
+      Quando for efetuado a acao do clique delete e em yes
+      Entao o usuario deve ser deletado
 
 

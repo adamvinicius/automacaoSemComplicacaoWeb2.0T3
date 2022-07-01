@@ -17,4 +17,6 @@ public class MyAccountMap {
     public WebElement btnDelete;
     @FindBy(css = ".deleteRed")
     public WebElement btnYes;
+    @FindBy(css = ".modificationTwo > p")
+    public WebElement textDelete;
 }
